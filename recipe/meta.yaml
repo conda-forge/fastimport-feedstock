@@ -1,6 +1,6 @@
 {% set name = "fastimport" %}
-{% set version = "0.9.8" %}
-{% set sha256 = "b2f2e8eb97000256e1aab83d2a0a053fc7b93c3aa4f7e9b971a5703dfc5963b9" %}
+{% set version = "0.9.10" %}
+{% set sha256 = "73efb532a5ab0cdeeb97a4902dc39f1e4e5f9b24efdc5793f1206c3a83ef750b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,10 +14,10 @@ source:
 build:
   noarch: python
   number: 0
-  script: python setup.py install 
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
   run:
     - python
@@ -33,7 +33,7 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: COPYING
-  summary: 'VCS fastimport/fastexport parser'
+  summary: VCS fastimport/fastexport parser
 
   description: |
     This package provides a parser for and generator of the Git fastimport format.
