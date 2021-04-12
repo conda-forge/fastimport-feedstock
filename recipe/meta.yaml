@@ -18,9 +18,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
+    - pip
   run:
-    - python
+    - python >=3.5
 
 test:
   imports:
@@ -30,7 +31,7 @@ test:
 
 about:
   home: https://github.com/jelmer/python-fastimport
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: VCS fastimport/fastexport parser
