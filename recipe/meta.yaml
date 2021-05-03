@@ -1,6 +1,6 @@
 {% set name = "fastimport" %}
-{% set version = "0.9.11" %}
-{% set sha256 = "ec81ddc3148f35ac5c77cce894995cf2ad66028831b73327190e1363a5f049d9" %}
+{% set version = "0.9.12" %}
+{% set sha256 = "8feb6800e2d1b21aa12173a5d11486b6b68dbf42d8cd60c1c3428810760d8690" %}
 
 package:
   name: {{ name|lower }}
